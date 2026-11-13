@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tax &amp; Financial Calculators | TAXORITHM</title>
+    <meta name="description" content="Calculate GST, TDS, EMI, net worth and tax estimates with easy-to-use tools from TAXORITHM." />
+    <link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
+  <body>
+    <div class="topbar"><div class="container topbar-inner"><div class="topbar-links"><a href="tel:+919010271777">☎ +91 90102 71777</a><a href="mailto:narasimhaAssociates@gmail.com">✉ narasimhaAssociates@gmail.com</a></div></div></div>
+    <header class="header"><div class="container navbar"><a href="index.html" class="brand" aria-label="Narasimha Associates home"><span class="brand-mark"><img src="assets/logo/logo.svg" alt="Narasimha Associates logo" /></span><span class="brand-text">NARASIMHA<span>ASSOCIATES</span></span></a><nav class="nav-menu" aria-label="Main menu"><div class="nav-item"><a class="nav-link" data-page="index.html" href="index.html">Home</a></div><div class="nav-item"><a class="nav-link" data-page="about.html" href="about.html">About Us</a></div><div class="nav-item"><a class="nav-link" data-page="services.html" href="services.html">Services</a></div><div class="nav-item has-mega"><a class="nav-link" data-page="knowledge-bank.html" href="knowledge-bank.html">Knowledge Bank</a><div class="mega-menu"><div class="mega-grid"><div class="mega-col"><h4>Direct Tax</h4><a href="https://www.incometax.gov.in/" target="_blank" rel="noopener">Income Tax Act</a><a href="https://www.incometax.gov.in/" target="_blank" rel="noopener">Income Tax Rules</a><a href="https://www.incometax.gov.in/" target="_blank" rel="noopener">Income Tax Circulars</a></div><div class="mega-col"><h4>Indirect Tax</h4><a href="https://www.gst.gov.in/" target="_blank" rel="noopener">GST</a><a href="https://www.gst.gov.in/" target="_blank" rel="noopener">CGST</a><a href="https://www.gst.gov.in/" target="_blank" rel="noopener">IGST</a></div><div class="mega-col"><h4>Government</h4><a href="https://www.mca.gov.in/" target="_blank" rel="noopener">MCA</a><a href="https://www.sebi.gov.in/" target="_blank" rel="noopener">SEBI</a><a href="https://www.rbi.org.in/" target="_blank" rel="noopener">RBI</a></div></div></div></div><div class="nav-item"><a class="nav-link" data-page="calculators.html" href="calculators.html">Calculators</a></div><div class="nav-item"><a class="nav-link" data-page="contact.html" href="contact.html">Contact Us</a></div></nav><div class="nav-actions"><a href="tel:+919010271777" class="contact-pill">☎ Call Us</a><a href="contact.html" class="btn btn-primary btn-md">Book a Consultation</a></div><button type="button" class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button></div></header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container page-hero-inner">
+          <div>
+            <span class="kicker">Calculators</span>
+            <h1>Simple calculators for tax, loans and finances.</h1>
+          </div>
+          <div class="breadcrumbs"><a href="index.html">Home</a> / Calculators</div>
+        </div>
+      </section>
+
+      <section class="page-content">
+        <div class="container">
+          <div class="info-panel reveal">
+            <strong>Please note:</strong> These calculators give estimates only. They use simple assumptions for FY 2026-27 and are not tax advice. Check the latest rules and rates before making a decision.
+          </div>
+          <div class="calculator-grid">
+            <article class="card calculator-card reveal">
+              <h3>GST Calculator</h3>
+              <form data-calculator="gst">
+                <div class="form-grid">
+                  <div class="form-field"><label>Amount</label><input name="gst-amount" type="number" min="0" step="0.01" /></div>
+                  <div class="form-field"><label>GST Rate (%)</label><input name="gst-rate" type="number" min="0" step="0.01" /></div>
+                  <div class="form-field full"><label>Type</label><select name="gst-type"><option value="exclusive">Exclusive of GST</option><option value="inclusive">Inclusive of GST</option></select></div>
+                </div>
+                <div class="hero-actions" style="margin-top:18px;"><button class="btn btn-primary btn-md" type="button" data-calc>Calculate</button><button class="btn btn-secondary btn-md" type="reset" data-reset>Reset</button></div>
+                <div class="form-message" data-result>Enter the amount and rate, then select Calculate.</div>
+              </form>
+            </article>
+
+            <article class="card calculator-card reveal">
+              <h3>GST MRP Calculator</h3>
+              <form data-calculator="mrp">
+                <div class="form-grid">
+                  <div class="form-field"><label>MRP</label><input name="mrp-price" type="number" min="0" step="0.01" value="1200" /></div>
+                  <div class="form-field"><label>GST Rate (%)</label><input name="mrp-rate" type="number" min="0" step="0.01" value="18" /></div>
+                </div>
+                <div class="hero-actions" style="margin-top:18px;"><button class="btn btn-primary btn-md" type="button" data-calc>Calculate</button><button class="btn btn-secondary btn-md" type="reset" data-reset>Reset</button></div>
+                <div class="form-message" data-result>Enter the MRP and GST rate, then select Calculate.</div>
+              </form>
+            </article>
+
+            <article class="card calculator-card reveal">
+              <h3>TDS Calculator</h3>
+              <form data-calculator="tds">
+                <div class="form-grid">
+                  <div class="form-field"><label>Payment Amount</label><input name="tds-amount" type="number" min="0" step="0.01" /></div>
+                  <div class="form-field"><label>TDS Rate (%)</label><input name="tds-rate" type="number" min="0" step="0.01" /></div>
+                </div>
+                <div class="hero-actions" style="margin-top:18px;"><button class="btn btn-primary btn-md" type="button" data-calc>Calculate</button><button class="btn btn-secondary btn-md" type="reset" data-reset>Reset</button></div>
+                <div class="form-message" data-result>Enter the payment amount and rate, then select Calculate.</div>
+              </form>
+            </article>
+
+            <article class="card calculator-card reveal">
+              <h3>Income Tax Calculator</h3>
+              <form data-calculator="income-tax">
+                <div class="form-grid">
+                  <div class="form-field"><label>Annual Income</label><input name="income-tax-income" type="number" min="0" step="0.01" /></div>
+                  <div class="form-field"><label>Deductions</label><input name="income-tax-deductions" type="number" min="0" step="0.01" /></div>
+                </div>
+                <div class="hero-actions" style="margin-top:18px;"><button class="btn btn-primary btn-md" type="button" data-calc>Calculate</button><button class="btn btn-secondary btn-md" type="reset" data-reset>Reset</button></div>
+                <div class="form-message" data-result>Enter your income and deductions, then select Calculate.</div>
+              </form>
+            </article>
+
+            <article class="card calculator-card reveal">
+              <h3>HRA Calculator</h3>
+              <form data-calculator="hra">
+                <div class="form-grid">
+                  <div class="form-field"><label>Monthly Rent</label><input name="hra-rent" type="number" min="0" step="0.01" /></div>
+                  <div class="form-field"><label>Annual Salary</label><input name="hra-salary" type="number" min="0" step="0.01" /></div>
+                  <div class="form-field full"><label>HRA Allowance</label><input name="hra-allowance" type="number" min="0" step="0.01" /></div>
+                </div>
+                <div class="hero-actions" style="margin-top:18px;"><button class="btn btn-primary btn-md" type="button" data-calc>Calculate</button><button class="btn btn-secondary btn-md" type="reset" data-reset>Reset</button></div>
+                <div class="form-message" data-result>Enter your rent and salary details, then select Calculate.</div>
+              </form>
+            </article>
+
+            <article class="card calculator-card reveal">
+              <h3>EMI Calculator</h3>
+              <form data-calculator="emi">
+                <div class="form-grid">
+                  <div class="form-field"><label>Loan Amount</label><input name="emi-principal" type="number" min="0" step="0.01" /></div>
+                  <div class="form-field"><label>Interest Rate (%)</label><input name="emi-rate" type="number" min="0" step="0.01" /></div>
+                  <div class="form-field full"><label>Loan Tenure (months)</label><input name="emi-tenure" type="number" min="1" step="1" /></div>
+                </div>
+                <div class="hero-actions" style="margin-top:18px;"><button class="btn btn-primary btn-md" type="button" data-calc>Calculate</button><button class="btn btn-secondary btn-md" type="reset" data-reset>Reset</button></div>
+                <div class="form-message" data-result>Enter the loan amount, interest rate and loan period, then select Calculate.</div>
+              </form>
+            </article>
+
+            <article class="card calculator-card reveal">
+              <h3>Net Worth Calculator</h3>
+              <form data-calculator="net-worth">
+                <div class="form-grid">
+                  <div class="form-field"><label>Total Assets</label><input name="networth-assets" type="number" min="0" step="0.01" /></div>
+                  <div class="form-field"><label>Total Liabilities</label><input name="networth-liabilities" type="number" min="0" step="0.01" /></div>
+                </div>
+                <div class="hero-actions" style="margin-top:18px;"><button class="btn btn-primary btn-md" type="button" data-calc>Calculate</button><button class="btn btn-secondary btn-md" type="reset" data-reset>Reset</button></div>
+                <div class="form-message" data-result>Enter your total assets and liabilities, then select Calculate.</div>
+              </form>
+            </article>
+
+            <article class="card calculator-card reveal">
+              <h3>Effective Capital Calculator</h3>
+              <form data-calculator="effective-capital">
+                <div class="form-grid">
+                  <div class="form-field"><label>Paid-up Capital</label><input name="capital-paidup" type="number" min="0" step="0.01" /></div>
+                  <div class="form-field"><label>Reserves</label><input name="capital-reserves" type="number" min="0" step="0.01" /></div>
+                  <div class="form-field full"><label>Borrowings</label><input name="capital-borrowings" type="number" min="0" step="0.01" /></div>
+                </div>
+                <div class="hero-actions" style="margin-top:18px;"><button class="btn btn-primary btn-md" type="button" data-calc>Calculate</button><button class="btn btn-secondary btn-md" type="reset" data-reset>Reset</button></div>
+                <div class="form-message" data-result>Enter the capital, reserves and borrowings, then select Calculate.</div>
+              </form>
+            </article>
+
+            <article class="card calculator-card reveal">
+              <h3>Depreciation Calculator</h3>
+              <form data-calculator="depreciation">
+                <div class="form-grid">
+                  <div class="form-field"><label>Asset Value</label><input name="dep-asset" type="number" min="0" step="0.01" /></div>
+                  <div class="form-field"><label>Salvage Value</label><input name="dep-salvage" type="number" min="0" step="0.01" /></div>
+                  <div class="form-field full"><label>Useful Life (years)</label><input name="dep-life" type="number" min="1" step="1" /></div>
+                </div>
+                <div class="hero-actions" style="margin-top:18px;"><button class="btn btn-primary btn-md" type="button" data-calc>Calculate</button><button class="btn btn-secondary btn-md" type="reset" data-reset>Reset</button></div>
+                <div class="form-message" data-result>Enter the asset value and useful life, then select Calculate.</div>
+              </form>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container"><div class="footer-grid"><div><div class="footer-brand"><img src="assets/logo/logo.svg" alt="Narasimha Associates logo" /><h3>Narasimha Associates</h3></div><p>Trusted financial guidance for taxation, compliance and advisory support.</p></div><div><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div><div><h4>Calculators</h4><ul class="footer-links"><li><a href="calculators.html">GST</a></li><li><a href="calculators.html">TDS</a></li><li><a href="calculators.html">EMI</a></li><li><a href="calculators.html">Tax</a></li></ul></div><div><h4>Contact</h4><ul class="footer-links"><li><a href="tel:+919010271777">+91 90102 71777</a></li><li><a href="mailto:narasimhaAssociates@gmail.com">narasimhaAssociates@gmail.com</a></li><li>Sattenapalli, Palnadu District, Andhra Pradesh, India.</li></ul></div></div><div class="footer-bottom"><span>© <span data-year></span> Narasimha Associates.</span><div class="social-links"><a href="https://www.linkedin.com" target="_blank" rel="noopener">in</a><a href="https://www.facebook.com" target="_blank" rel="noopener">f</a></div></div></div>
+    </footer>
+
+    <div class="floating-actions"><a class="fab whatsapp" href="https://wa.me/919010271777" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a><button type="button" class="fab top" aria-label="Back to top">↑</button></div>
+
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/calculators.js"></script>
+  </body>
+</html>
